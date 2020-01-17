@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+  <title>Class Todo List</title>
+</head>
+<body>
+  <h1>Todo List</h1>
+  <form action="#" id="addTodo" method='post'>
+      <label for="task">Task</label>
+      <input type="text" name="task" id="task">
+      <label for="Date">Due Date</label>
+      <input type="datetime-local" name="dueDate" id="dueDate">
+      <input type="submit" value="Add Task">
+  </form> 
+
+  <h3>Todos</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Due Date</th>
+        <th>Complete</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="todoList"></tbody>
+  </table>
+
+  <script src="Todo.js"></script>
+  <script src="TodoList.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
